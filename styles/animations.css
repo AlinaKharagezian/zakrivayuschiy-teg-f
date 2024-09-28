@@ -12,3 +12,26 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes triangle-moving {
+    
+    to {
+        transform: translateX(4px);
+    }
+}
+
+@keyframes heart-scaling {
+
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.5;
+    }
+}
+
+@keyframes sparks-coloring {
+    to {
+        opacity: 1;
+    }
+}
