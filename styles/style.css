@@ -89,9 +89,11 @@
   transform: scaleX(0);
   transform-origin: left;
   block-size: 2px;
-  inline-size: 100%;
+  inline-size: 90%;
   background: var(--main-color);
   opacity: 0.6;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .theme-menu__button:focus {
@@ -273,11 +275,11 @@
 }
 
 .like-icon.is-liked {
-  animation: heart-scaling 0.3s 0.1s ease-in reverse;
+  animation: heart-scaling 0.3s 0.1s ease-in alternate;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-coloring 0.3s 0.3s ease-in reverse ;
+  animation: sparks-coloring 0.3s 0.3s ease-in alternate ;
 }
 
 .sparks {
@@ -287,17 +289,20 @@
 .contour {
   fill: var(--main-color);
   transition-duration: 0.1s;
+  transition-timing-function: linear;
 }
 
 .core {
   fill: transparent;
   transition-delay: 0.03s;
   transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .main-body {
   fill: transparent;
   transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .card__buttons-container {
